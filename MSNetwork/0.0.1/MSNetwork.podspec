@@ -19,13 +19,8 @@ Pod::Spec.new do |s|
 
 
   s.source       = { :git => "https://github.com/mosai-lk/MSNetwork.git" }
-
-  s.source_files  = "MSNetwork/MSNetwork/Classes/**/*.{h,m}"
-
-  s.public_header_files = "MSNetwork/MSNetwork/Classes/**/*.h"
-
   s.frameworks = "MobileCoreServices", "CFNetwork", "CoreGraphics"
-
+  s.vendored_frameworks = "MSNetwork/Products/MSNet.framework"
   # s.dependency "JSONKit", "~> 1.4"
 
 end
